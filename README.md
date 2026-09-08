@@ -7,10 +7,16 @@ circuit boards.
 The application uses Monte Carlo simulation, Unity physics, and 3D visualization
 to model whisker behavior and analyze potential electrical bridging events.
 
+![Tin Whisker Heatmap Simulation](heatmap-simulation.gif)
+
+*Unity simulation showing detached whiskers and bridge-density visualization across the PCB.*
+
 ## My Contribution: Heatmap Visualization
 
 My primary contribution was redesigning and debugging the simulation's heatmap
 visualization system.
+
+**[View the detailed technical breakdown of my heatmap work →](docs/heatmap-contribution.md)**
 
 The existing heatmap highlighted individual conductor objects when bridging
 events occurred. I worked on a new approach intended to visualize bridge
@@ -53,8 +59,7 @@ estimate bridging risk under different operating conditions.
 The heatmap work involved debugging interactions across several layers of the
 application:
 
-Simulation Data → 3D Coordinates → Texture Coordinates → Texture Generation →
-PCB Material → Unity UI
+`Simulation Data → 3D Coordinates → Texture Coordinates → Texture Generation → PCB Material → Unity UI`
 
 Key challenges included:
 
